@@ -103,15 +103,12 @@ def checkCardValidity(cardName, cardNumber, cardCvv,cardExpiry):
 
 if __name__ == "__main__":
 
-    '''cardName = sys.argv[1]
+    cardName = sys.argv[1]
     cardNumber = sys.argv[2]
     cardCvv = sys.argv[3]
-    cardExpiry = sys.argv[4]'''
-
-    validateNumber("123123");
-
-    #print(checkCardValidity(cardName, cardNumber, cardCvv, cardExpiry))
-    #sys.stdout.flush()
+    cardExpiry = sys.argv[4]
+    print(checkCardValidity(cardName, cardNumber, cardCvv, cardExpiry))
+    sys.stdout.flush()
 
 
 
