@@ -69,7 +69,6 @@ def validateNumber(cc_num):
                 doubled_digit = dig_sum
         else:
             sum_of_odds += digits[i]
-    for i in 
     
     print(digits)
 
