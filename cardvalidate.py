@@ -36,7 +36,7 @@ def sum_digits(digit):
 
 def validateNumber(cc_num):
     # reverse the credit card number
-    '''cc_num = cc_num[::-1]
+    cc_num = cc_num[::-1]
     # convert to integer list
     cc_num = [int(x) for x in cc_num]
     # double every second digit
@@ -53,22 +53,7 @@ def validateNumber(cc_num):
     # sum all digits
     sum_of_digits = sum(doubled_second_digit_list)
     # return True or False
-    return sum_of_digits % 10 == 0'''
-    digits = map(int, cc_num[::-1]) #reverse the string number and create an array
-    sum_of_odds = 0
-    sum_of_evens = 0
-    doubled_digits = []
-    for i in range(0, len(digits)):
-        if i%2 == 0:
-            doubled_digit = digits[i]*2
-            if(doubled_digit >= 10):
-                dig_sum = 0
-                while(doubled_digit):
-                    dig_sum += (doubled_digit % 10)
-                    doubled_digit /= 10
-                doubled_digit = dig_sum
-        else:
-            sum_of_odds += digits[i]
+    return sum_of_digits % 10 == 0
     
     print(digits)
 
@@ -112,7 +97,7 @@ def checkCardValidity(cardName, cardNumber, cardCvv,cardExpiry):
     cardNameValid = validateName(cardName)
     cardCvvValid = validateCvv(cardCvv)
     cardExpiryValid = validateExpiry(cardExpiry)
-    return(cardNameValid and cardNameValid and cardCvvValid and cardExpiryValid)
+    return(cardNameValid and cardNumValid and cardCvvValid and cardExpiryValid)
 
 
 
