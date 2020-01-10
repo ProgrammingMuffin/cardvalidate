@@ -1,4 +1,4 @@
-import cardVerify
+import cardvalidate as cardVerify
 
 #Can use any values as long as it conforms to the right format. (Names shouldn't have numbers, etc)
 
