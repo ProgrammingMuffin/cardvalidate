@@ -1,0 +1,31 @@
+{
+  "name": "credit",
+  "version": "1.0.0",
+  "description": "A credit card validation API that uses the Luhn's algorithm for validating credit card numbers and regular expressions for the other fields. An API is also provided for the same.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "credit"
+  },
+  "keywords": [
+    "credit",
+    "card",
+    "validation",
+    "validation",
+    "luhn's",
+    "algorithm",
+    "luhn"
+  ],
+  "author": "Deepak R",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "child_process": "^1.0.2",
+    "express": "^4.17.1",
+    "express-generator": "^4.16.1",
+    "nodemon": "^2.0.2"
+  }
+}
